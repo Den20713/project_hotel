@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    user-select: none;
+    
+}
+
+h1{
+    font-size: 6vh;
+    color: white;
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+.inHeader{
+    height: 100dvh;
+
+}
+.inHeaderBackground{
+    width: 100%;
+    height: 100%;
+    background: url("img/in_beackground_header.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+.inHeaderText{
+    font-size: 10vh;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.inWhyWe{
+    text-align: center;
+    background: hsla(210, 100%, 27%, 1);
+    background: linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00458B", endColorstr="#0191B2", GradientType=1 );
+    border-bottom: white 4px solid;
+}
