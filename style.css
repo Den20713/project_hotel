@@ -6,18 +6,26 @@
     font-style: normal;
     text-decoration: none;
     user-select: none;
-    
+    color: white;
 }
+
+img {
+    width: auto;       
+    height: auto;      
+    max-width: none;  
+    max-height: none;  
+}
+
 
 h1{
     font-size: 6vh;
     color: white;
 }
 h2{
-
+ font-size: 5vh;
 }
 h3{
-
+    font-size: 3.5vh;
 }
 h4{
 
@@ -26,7 +34,7 @@ h5{
 
 }
 .inHeader{
-    height: 100dvh;
+    
 
 }
 .inHeaderBackground{
@@ -36,12 +44,14 @@ h5{
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    height: 100dvh;
 
 }
 .inHeaderText{
+    margin: 10vh;
     font-size: 10vh;
-    color: rgb(255, 255, 255);
+    color : white;
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 .inWhyWe{
@@ -53,3 +63,40 @@ h5{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00458B", endColorstr="#0191B2", GradientType=1 );
     border-bottom: white 4px solid;
 }
+
+
+.inWhyWeInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+
+}
+.inWhyWeBlock{
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+.inWhyWeBlockImg{
+    width: 40vh;
+    height: 30vh;
+    background: no-repeat cover;
+}
+.inWhyWeBlockText{
+    background-color: rgba(0, 0, 0, 0.712);
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+
+
+
+
