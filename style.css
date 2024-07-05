@@ -1,5 +1,13 @@
+
+
+
+
+
+
+
+
+
 *{
-    padding: 0px;
     margin: 0px;
     font-family: "Prata", serif;
     font-weight: 400;
@@ -16,22 +24,40 @@ img {
     max-height: none;  
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+
 
 h1{
-    font-size: 6vh;
-    color: white;
+    font-size: 6vw;
+
 }
 h2{
- font-size: 5vh;
+ font-size: 3vw;
 }
 h3{
-    font-size: 3.5vh;
+    font-size: 1.5vw;
 }
 h4{
-
+    font-size: 1vw;
 }
 h5{
 
+}
+
+footer li div a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+footer ul li{
+    margin: 5px 0px 5px 0px;    
 }
 .inHeader{
     
@@ -45,14 +71,12 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: 90dvh;
 
 }
 .inHeaderText{
-    margin: 10vh;
-    font-size: 10vh;
-    color : white;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin:3vw 0px ;
+    text-shadow: 0px 0px 10px  rgb(0, 0, 0);
 }
 .inWhyWe{
     text-align: center;
@@ -61,7 +85,6 @@ h5{
     background: -moz-linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
     background: -webkit-linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00458B", endColorstr="#0191B2", GradientType=1 );
-    border-bottom: white 4px solid;
 }
 
 
@@ -83,20 +106,81 @@ h5{
     
 }
 .inWhyWeBlockImg{
-    width: 40vh;
-    height: 30vh;
+    width: 40vw;
+    height: 30vw;
     background: no-repeat cover;
 }
 .inWhyWeBlockText{
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: #064273;
     display: flex ;
     flex-direction: column;
     justify-content: center;
+}
+
+.inWhyWeeH2{
+    margin: 10px 10px 5px 10px;
+}
+.inWhyWeH3{
+    margin: 0px 10px 10px 10px;
+}
+.inFIcon{
+    width: 2.5vh;
+    height: 2.5vh;
+    align-items: center;
+    margin-left: 5px;
+}
 
 
+.inFTitle{
+
+}
+.inFText{
+
+}
+
+.inFPart{
+    
+}
+
+.inNumbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+.inNImg{
+    width: 12vw;
+    height: 9vw;
+}
+
+
+@media  screen and (max-width: 768px) {
+    *{
+    };
+
+  h1{
+    font-size: 6vw;
+
+}
+h2{
+ font-size: 3vw;
+}
+h3{
+    font-size: 1.5vw;
+}
+h4{
+    font-size: 1vw;
+}
+h5{
+
+}
+
+.inHeaderBackground{
+    height: 60dvh;
 }
 
 
 
 
-
+}
