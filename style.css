@@ -15,6 +15,7 @@
     text-decoration: none;
     cursor: default;
     color: white;
+    border: none;
 
 }
 
@@ -30,9 +31,17 @@ footer{
     justify-content: space-around;
     background-color: black;
     padding-bottom: 10px;
+    
 }
-
-
+footer div {
+    display: flex;
+    flex-direction:column ;
+}
+footer div div a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 h1{
     font-size: 6vw;
@@ -51,12 +60,7 @@ h5{
 
 }
 
-footer li div a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-}
+
 
 
 
@@ -180,19 +184,56 @@ footer li div a{
     justify-content: space-around;
     align-items: center;
     background-color: #064273;
+    padding:2vh 0vh 2vh 0vh;
 }
 .inNImg{
     width: 12vw;
     height: 9vw;
 }
+.InNButton{
+    background-color: #064273;
+}
+
+
+button {
+    font-family: monospace;
+    background-color: #064273;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: .3s;
+  }
+  
+  button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
 
 
 
 @media  screen and (max-width: 768px) {
+    header{
+        padding: 1.5vh 0px 1.5vh 0px;
+        font-size: ;
+    }
+    footer div h3{
+        font-size:3vw;
+        
+    }
+    footer div h4,footer div div{
+        font-size:2.5vw;
+    }
 
     .inHeaderBackground{
         height: 40dvh;
     }
+    .inInheader{
+        font-size: 4vw;
+    }
+
 
 }
 
