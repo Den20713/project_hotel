@@ -16,9 +16,10 @@
     cursor: default;
     color: white;
     border: none;
+    
 
 }
-
+body{width: 100%;}
 img {
     width: auto;       
     height: auto;      
@@ -98,7 +99,7 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90dvh;
+    height: 88dvh;
     z-index: -20;
 
 }
@@ -107,6 +108,7 @@ h5{
     text-shadow: 0px 0px 10px  rgb(0, 0, 0);
 }
 .inWhyWe{
+    margin-bottom: 2vh;
     text-align: center;
     background: hsla(210, 100%, 27%, 1);
     background: linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
@@ -120,7 +122,6 @@ h5{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10px;
 
 }
 .inWhyWeBlock{
@@ -130,15 +131,13 @@ h5{
     justify-content: center;
     width: 80%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 3.5vh;
     transition: all 0.3s linear;
     position: relative;
+    transition-delay:0.1s ;
 
 }
-.inWhyWeBlock:hover{
-    scale: 1.05;
-    z-index: 10;
-}
+
 .inWhyWeBlockImg{
     width: 40vw;
     height: 30vw;
@@ -153,10 +152,10 @@ h5{
     justify-content: center;
 }
 
-.inWhyWeeH2{
+.inWhyWeBlockH2{
     margin: 10px 10px 5px 10px;
 }
-.inWhyWeH3{
+.inWhyWeBlockH3{
     margin: 0px 10px 10px 10px;
 }
 .inFIcon{
@@ -217,7 +216,7 @@ button {
 @media  screen and (max-width: 768px) {
     header{
         padding: 1.5vh 0px 1.5vh 0px;
-        font-size: ;
+        font-size: 3vw;
     }
     footer div h3{
         font-size:3vw;
@@ -228,11 +227,45 @@ button {
     }
 
     .inHeaderBackground{
-        height: 40dvh;
+        height: 30dvh;
     }
     .inInheader{
         font-size: 4vw;
     }
+    .inWhyWeBlock{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .inWhyWeBlockImg{
+        width: 50vw;
+        height: 37.5vw;
+        background: no-repeat cover;
+        border-radius: 0px
+    }
+    .inWhyWe{
+        margin-bottom: 10px;
+    }
+    .inWhyWeBlockH2{
+        margin-left: 15px;
+        font-size: 3.5vw;
+    }
+    .inWhyWeBlockH3{
+        margin-left: 10px;
+        font-size: 2vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
