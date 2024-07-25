@@ -20,11 +20,29 @@
 
 }
 body{width: 100%;}
-img {
-    width: auto;       
-    height: auto;      
-    max-width: none;  
-    max-height: none;  
+
+
+
+h1{
+    font-size: 6vw;
+
+}
+h2{
+ font-size: 3vw;
+}
+h3{
+    font-size: 1.5vw;
+}
+h4{
+    font-size: 1vw;
+}
+h5{
+
+}
+h6{
+    font-size: 0.4vw;
+    background-color: black;
+    text-align: right;
 }
 
 footer{
@@ -43,33 +61,22 @@ footer div div a{
     flex-direction: row;
     align-items: center;
 }
-
-h1{
-    font-size: 6vw;
+.inFTitle{
 
 }
-h2{
- font-size: 3vw;
+.inFText{
+    
 }
-h3{
-    font-size: 1.5vw;
+.inFPart{
+    
 }
-h4{
-    font-size: 1vw;
+.inFIcon{
+    width: 2.5vw;
+    height: 2.5vw;
+    align-items: center;
+    margin-left: 5px;
 }
-h5{
 
-}
-
-
-
-
-
-
-
-
-
-/*index*/
 .inHeader{
     display: flex;
     flex-direction: row;
@@ -95,33 +102,52 @@ h5{
     width: 100%;
     height: 100%;
     background: url("img/in_beackground_header.jpg") no-repeat center center;
-    background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 88dvh;
+    height: 95dvh;
     z-index: -20;
+    background-size: cover;
+    background-attachment: fixed;
 
 }
 .inHeaderText{
-    margin:3vw 0px ;
+    font-size: 7vw;
+    position: absolute;
+    top: 38%;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    margin-left: 3vw;
     text-shadow: 0px 0px 10px  rgb(0, 0, 0);
 }
-.inWhyWe{
-    margin-bottom: 2vh;
+.inHeaderWhyWe{
+    font-size: 5vw;
     text-align: center;
-    background: hsla(210, 100%, 27%, 1);
-    background: linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
-    background: -moz-linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
-    background: -webkit-linear-gradient(0deg, hsla(210, 100%, 27%, 1) 0%, hsla(191, 99%, 35%, 1) 23%, hsla(227, 28%, 47%, 1) 45%, hsla(255, 26%, 42%, 1) 55%, hsla(233, 10%, 45%, 1) 65%, hsla(204, 100%, 26%, 1) 85%, hsla(191, 100%, 26%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00458B", endColorstr="#0191B2", GradientType=1 );
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 0px 10px  rgb(0, 0, 0);
 }
+.inHeaderBDiv1{
+    flex: 1;
+}
+.inHeaderBDiv2{
+    flex: none;
+}
+
+
+
+
+/*index*/
+
+
 
 
 .inWhyWeInfo{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-top: 3.5vh;
 
 }
 .inWhyWeBlock{
@@ -158,21 +184,8 @@ h5{
 .inWhyWeBlockH3{
     margin: 0px 10px 10px 10px;
 }
-.inFIcon{
-    width: 2.5vw;
-    height: 2.5vw;
-    align-items: center;
-    margin-left: 5px;
-}
-.inFTitle{
 
-}
-.inFText{
-    
-}
-.inFPart{
-    
-}
+
 
 
 
@@ -182,8 +195,6 @@ h5{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #064273;
-    padding:2vh 0vh 2vh 0vh;
 }
 .inNImg{
     width: 12vw;
@@ -192,24 +203,24 @@ h5{
 .InNButton{
     background-color: #064273;
 }
-
-
-button {
-    font-family: monospace;
+.inBuyNumbers{
     background-color: #064273;
     color: white;
     border: none;
     border-radius: 8px;
     width: 100px;
     height: 45px;
-    transition: .3s;
+    transition: 0.3s;
   }
   
-  button:hover {
+.inBuyNumbers:hover{
     background-color: #3b82f6;
     box-shadow: 0 0 0 5px #3b83f65f;
     color: #fff;
-  }
+}
+.inNumbersPart{
+
+}
 
 
 
@@ -227,10 +238,24 @@ button {
     }
 
     .inHeaderBackground{
-        height: 30dvh;
+        height: 40dvh;
+
+
+    }
+
+    .inHeaderBackground, .inHeaderBDiv1, .inHeaderBDiv2 {
+        background-attachment: scroll; 
+        background-size: cover; 
+        position: static;
+    }
+    .inHeaderText{
+        position: static;
+        margin-top: 13dvh;
+
     }
     .inInheader{
         font-size: 4vw;
+        background-attachment: initial;
     }
     .inWhyWeBlock{
         width: 100%;
@@ -272,4 +297,13 @@ button {
 
 
 /*rooms*\
+
+
+
+
+
+
+
+
+
 
