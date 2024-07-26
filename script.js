@@ -1,3 +1,5 @@
+
+// Анімація збільшення зменшиння при прокручуані
 let inWhyWeBlock = document.getElementsByClassName("inWhyWeBlock")
 function inDefaultStyle(element) {
     element.style.cssText = "transform: scale(1);";
@@ -16,9 +18,32 @@ window.addEventListener('scroll', () => {
                 if(elementTop <= windowHeight / 8){
                     inDefaultStyle(inWhyWeBlock[i])
 }}}}});
+// Анімація збільшення зменшиння при прокручуані
+
+
+
+// let inHeaderBackground=document.getElementsByClassName('inHeaderBackground')
+
+// function inHeaderBackgroundStyleStandart(element) {
+//     element.style.cssText = `background-position: 0px 0px;`;
+// }
+
+// function inHeaBackgroundStyleNoStandart(element, value) {
+//     element.style.cssText = `background-position: 0px 0px;`;
+// }
+
+// inHeaBackgroundStyleNoStandart(inHeaderBackground, 10)
 
 
 
 
+let inHeaderBackground = document.getElementsByClassName('inHeaderBackground');
 
+function inHeaderBackgroundStyleStandart(element) {
+    element.style.cssText = `background-position: 0px 0px;`;
+}
 
+function inHeaBackgroundStyleNoStandart(element, value) {
+    element.style.cssText = `background-position: 0px ${value}px;`;
+}
+inHeaBackgroundStyleNoStandart(inHeaderBackground[0], 0);

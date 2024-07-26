@@ -40,10 +40,11 @@ h5{
 
 }
 h6{
-    font-size: 0.4vw;
+    font-size: 0.7vw;
     background-color: black;
     text-align: right;
 }
+
 
 footer{
     display: flex;
@@ -112,9 +113,7 @@ footer div div a{
 
 }
 .inHeaderText{
-    font-size: 7vw;
-    position: absolute;
-    top: 38%;
+    font-size: 4.3vw;
     display: flex;
     text-align: start;
     align-items: center;
@@ -122,17 +121,19 @@ footer div div a{
     text-shadow: 0px 0px 10px  rgb(0, 0, 0);
 }
 .inHeaderWhyWe{
-    font-size: 5vw;
+    font-size: 2.5vw;
     text-align: center;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.2);
     text-shadow: 0px 0px 10px  rgb(0, 0, 0);
 }
 .inHeaderBDiv1{
+    display: flex;
     flex: 1;
 }
 .inHeaderBDiv2{
-    flex: none;
+    
+    flex: 0;
 }
 
 
@@ -187,18 +188,23 @@ footer div div a{
 
 
 
+/* rooms */
 
-
-
+.inNumbersH2{
+    background-color: #064273;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5vh;
+}
 .inNumbers{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 }
-.inNImg{
-    width: 12vw;
-    height: 9vw;
+.inNumberImg{
+    background-size: cover;
+    width: 40vw;
+    height: 30vw;
 }
 .InNButton{
     background-color: #064273;
@@ -208,9 +214,11 @@ footer div div a{
     color: white;
     border: none;
     border-radius: 8px;
-    width: 100px;
-    height: 45px;
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
   
 .inBuyNumbers:hover{
@@ -219,7 +227,70 @@ footer div div a{
     color: #fff;
 }
 .inNumbersPart{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 3.5vh;
+}
+.inNumbersRight{
+    background-color: #064273;
+    display: flex;
+    flex: 1;
+    position: relative;
+    
+}
+.inNumbersRight1{
+    position: absolute;
+    top: 10%;
 
+}
+.inNumbersRight2{
+    position: absolute;
+    top: 30%;
+}
+
+.inNumbersRight3{
+    position: absolute;
+    top: 53%;
+}
+
+.inNumbersRight4{
+    position: absolute;
+    top: 75%;
+}
+
+.inNumbersRight5{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 4vw;
+}
+
+.inNumbersRight6{
+    position: absolute;
+    font-size: 3.5vw;
+    top: 10%;
+    left: 60%;
+}
+
+.inNumbersRight7{
+    position: absolute;
+    top: 25%;
+    left: 79%;
+    font-size: 1.5vw;
+}
+
+.inNumbersRight8{
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 5px 10px;
+}
+.inNumbersRight1, .inNumbersRight2, .inNumbersRight3, .inNumbersRight4{
+    font-size: 1.5vw;
+    left: 5%;
 }
 
 
@@ -238,7 +309,7 @@ footer div div a{
     }
 
     .inHeaderBackground{
-        height: 40dvh;
+        height: 50dvh;
 
 
     }
@@ -249,8 +320,7 @@ footer div div a{
         position: static;
     }
     .inHeaderText{
-        position: static;
-        margin-top: 13dvh;
+        font-size: 6vw
 
     }
     .inInheader{
@@ -267,9 +337,7 @@ footer div div a{
         background: no-repeat cover;
         border-radius: 0px
     }
-    .inWhyWe{
-        margin-bottom: 10px;
-    }
+    
     .inWhyWeBlockH2{
         margin-left: 15px;
         font-size: 3.5vw;
@@ -278,8 +346,13 @@ footer div div a{
         margin-left: 10px;
         font-size: 2vw;
     }
-
-
+    .inHeaderWhyWe{
+        font-size: 4.5vw;
+    }
+    .inNumbersPart{
+        width: 100%;
+    }
+        
 
 
 
@@ -295,8 +368,6 @@ footer div div a{
 
 }
 
-
-/*rooms*\
 
 
 
