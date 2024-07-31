@@ -1,3 +1,12 @@
+// preloader
+window.addEventListener('load', function() {
+    let preloader = document.querySelector('.preloader');
+    preloader.style.display = 'none';
+    document.body.style.overflow = 'auto';
+});
+//preloader
+
+
 
 // Анімація збільшення зменшиння при прокручуані
 let inWhyWeBlock = document.getElementsByClassName("inWhyWeBlock")

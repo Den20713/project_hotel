@@ -1,5 +1,44 @@
+.preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
 
-
+.loader {
+    box-sizing: border-box;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+  }
+  .loader:after, .loader:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FF3D00;
+    animation: spin 1s linear infinite;
+    transform-origin: 0px 100%;
+  }
+  .loader:before {
+    transform-origin: 0 50%;
+    background: #fff;
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+      
 
 
 
@@ -85,6 +124,7 @@ footer div div a{
     box-shadow: 0px 2px 30px 5px rgb(0, 0, 0);
     background-color:#064273;
     position: relative ;
+    padding: 5px 00px;
 }
 
 .inInheader{
@@ -115,7 +155,7 @@ footer div div a{
 .inHeaderText{
     font-size: 4.3vw;
     display: flex;
-    text-align: start;
+    text-align: ;
     align-items: center;
     margin-left: 3vw;
     text-shadow: 0px 0px 10px  rgb(0, 0, 0);
@@ -209,23 +249,71 @@ footer div div a{
 .InNButton{
     background-color: #064273;
 }
+
+
+
+
+
+
+
+
+
 .inBuyNumbers{
-    background-color: #064273;
-    color: white;
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
     border: none;
-    border-radius: 8px;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-.inBuyNumbers:hover{
-    background-color: #3b82f6;
-    box-shadow: 0 0 0 5px #3b83f65f;
-    color: #fff;
-}
+    font-family: inherit;
+    font-weight: 500;
+    color:white;
+    background-color: ;
+   }
+   
+   .inBuyNumbers:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .inBuyNumbers:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .inBuyNumbers::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .inBuyNumbers::after {
+    background-color: ;
+   }
+   
+   .inBuyNumbers:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+
+
+
+
+
+
+
+
+
 .inNumbersPart{
     display: flex;
     flex-direction: row;
