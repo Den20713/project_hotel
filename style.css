@@ -10,14 +10,15 @@
         justify-content: center;
         align-items: center;
         z-index: 1000;
+        transition: all 1s linear;
     }
-
+    
 .loader {
     box-sizing: border-box;
     position: relative;
     width: 48px;
     height: 48px;
-    animation: spin 1s linear infinite;
+    animation: spin 0.5s linear infinite;
   }
   .loader:after, .loader:before {
     content: "";
@@ -25,7 +26,7 @@
     height: 24px;
     position: absolute;
     border-radius: 50%;
-    background: #FF3D00;
+    background: #064273;
     animation: spin 1s linear infinite;
     transform-origin: 0px 100%;
   }
@@ -155,7 +156,7 @@ footer div div a{
 .inHeaderText{
     font-size: 4.3vw;
     display: flex;
-    text-align: ;
+    text-align: center;
     align-items: center;
     margin-left: 3vw;
     text-shadow: 0px 0px 10px  rgb(0, 0, 0);

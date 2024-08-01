@@ -1,8 +1,15 @@
 // preloader
 window.addEventListener('load', function() {
     let preloader = document.querySelector('.preloader');
-    preloader.style.display = 'none';
-    document.body.style.overflow = 'auto';
+    let loader = document.querySelector('.loader');
+
+
+    this.setTimeout(function() {
+        loader.style.display = "none";
+        preloader.style.cssText = "top: -100%;";
+    },1000)
+    
+
 });
 //preloader
 
@@ -28,21 +35,6 @@ window.addEventListener('scroll', () => {
                     inDefaultStyle(inWhyWeBlock[i])
 }}}}});
 // Анімація збільшення зменшиння при прокручуані
-
-
-
-// let inHeaderBackground=document.getElementsByClassName('inHeaderBackground')
-
-// function inHeaderBackgroundStyleStandart(element) {
-//     element.style.cssText = `background-position: 0px 0px;`;
-// }
-
-// function inHeaBackgroundStyleNoStandart(element, value) {
-//     element.style.cssText = `background-position: 0px 0px;`;
-// }
-
-// inHeaBackgroundStyleNoStandart(inHeaderBackground, 10)
-
 
 
 
