@@ -8,8 +8,6 @@ window.addEventListener('load', function() {
         loader.style.display = "none";
         preloader.style.cssText = "top: -100%;";
     },1000)
-    
-
 });
 //preloader
 

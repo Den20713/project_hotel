@@ -10,38 +10,43 @@
         justify-content: center;
         align-items: center;
         z-index: 1000;
-        transition: all 1s linear;
+        transition: all 0.5s linear;
     }
     
-.loader {
-    box-sizing: border-box;
-    position: relative;
-    width: 48px;
-    height: 48px;
-    animation: spin 0.5s linear infinite;
-  }
-  .loader:after, .loader:before {
-    content: "";
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    border-radius: 50%;
-    background: #064273;
-    animation: spin 1s linear infinite;
-    transform-origin: 0px 100%;
-  }
-  .loader:before {
-    transform-origin: 0 50%;
-    background: #fff;
-  }
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-      
+    .loader {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: relative;
+        animation: rotate 1s linear infinite
+      }
+      .loader::before , .loader::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        inset: 0px;
+        border-radius: 50%;
+        border: 10px solid #064273;
+        animation: prixClipFix 2s linear infinite ;
+      }
+      .loader::after{
+        border-color: #FF3D00;
+        animation: prixClipFix 2s linear infinite , rotate 0.5s linear infinite reverse;
+        inset: 20px;
+      }
 
+      @keyframes rotate {
+        0%   {transform: rotate(0deg)}
+        100%   {transform: rotate(360deg)}
+      }
 
+      @keyframes prixClipFix {
+          0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+          25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+          50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+          75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+          100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+      }
 
 
 
@@ -215,16 +220,16 @@ footer div div a{
 }
 .inWhyWeBlockText{
     background-color: #064273;
-    display: flex ;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .inWhyWeBlockH2{
     margin: 10px 10px 5px 10px;
+    text-align: center;
+    font-size: 3vw;
 }
 .inWhyWeBlockH3{
     margin: 0px 10px 10px 10px;
+    font-size: 2vw;
 }
 
 
@@ -302,7 +307,7 @@ footer div div a{
     background-color: ;
    }
    
-   .inBuyNumbers:hover::after {
+.inBuyNumbers:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
    }
@@ -324,62 +329,42 @@ footer div div a{
 .inNumbersRight{
     background-color: #064273;
     display: flex;
-    flex: 1;
-    position: relative;
+    flex-direction: column;
     
 }
 .inNumbersRight1{
-    position: absolute;
-    top: 10%;
 
 }
 .inNumbersRight2{
-    position: absolute;
-    top: 30%;
+
 }
 
 .inNumbersRight3{
-    position: absolute;
-    top: 53%;
+
 }
 
 .inNumbersRight4{
-    position: absolute;
-    top: 75%;
+
 }
 
 .inNumbersRight5{
-    position: absolute;
-    top: 40%;
-    left: 30%;
     font-size: 4vw;
 }
 
 .inNumbersRight6{
-    position: absolute;
     font-size: 3.5vw;
-    top: 10%;
-    left: 60%;
 }
 
 .inNumbersRight7{
-    position: absolute;
-    top: 25%;
-    left: 79%;
     font-size: 1.5vw;
 }
 
 .inNumbersRight8{
-    position: absolute;
-    top: 75%;
-    left: 70%;
     font-size: 1.5vw;
     text-align: center;
-    padding: 5px 10px;
 }
 .inNumbersRight1, .inNumbersRight2, .inNumbersRight3, .inNumbersRight4{
     font-size: 1.5vw;
-    left: 5%;
 }
 
 
@@ -432,8 +417,8 @@ footer div div a{
         font-size: 3.5vw;
     }
     .inWhyWeBlockH3{
-        margin-left: 10px;
-        font-size: 2vw;
+        margin-left: 5px;
+        font-size: 2.34vw;
     }
     .inHeaderWhyWe{
         font-size: 4.5vw;
@@ -473,7 +458,10 @@ footer div div a{
         font-size: 2.3vw;
     }
 
-
+    .loader {
+        width: 100px;
+        height: 100px;
+    }
 
 
 
