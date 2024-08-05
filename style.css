@@ -108,15 +108,6 @@ footer div div a{
     flex-direction: row;
     align-items: center;
 }
-.inFTitle{
-
-}
-.inFText{
-    
-}
-.inFPart{
-    
-}
 .inFIcon{
     width: 2.5vw;
     height: 2.5vw;
@@ -338,7 +329,7 @@ footer div div a{
     display: none;
     font-size: 4vw;
     background-color: #064273;
-    margin-bottom: 1vw
+    margin-bottom: 1vw;
     text-align: center; 
 }
 
@@ -466,6 +457,7 @@ footer div div a{
         width: 100%;
         text-align: center;
         margin-bottom: 1vw;
+        font-size: 2vw;
     }
 
 

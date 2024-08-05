@@ -68,21 +68,47 @@ async function getProducts() {
 // Генеруємо HTML-код для карточки товару
 function getCardHTML(product) {
     return `
-        <div class="inNumbersPart">
-                <img src="img/${product.img}" class="inNumberImg">
-                <div class="inNumbersRight">
-                    <div class="inNumbersRight5">${product.name}</div>
-                    <div style="display: flex; flex-direction: row;">
+         <div class="inNumbersNameMB">Лакшері</div>
+            <div class="inNumbersPart">
+                <div id="carouselExample" class="carousel slide" style="    background-size: cover;
+                width: 40vw;
+                margin-right: 2vw;">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="${product.img2}" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="${product.img3}" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="${product.img4}" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="${product.img1}" class="d-block w-100">
+                      </div>
+                    </div>
+                    <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button  class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="inNumbersInfo">
+                    <div class="inNumbersNamePC">${product.name}</div>
+                    <div style="display: flex; flex-direction: row; height: 100%;">
                         <div class="inNumbersLeftPart">
-                            <div class="inNumbersRight1">${product.plus}</div>
-                            <div class="inNumbersRight2">${product.plus}</div>
-                            <div class="inNumbersRight3">${product.plus}</div>
-                            <div class="inNumbersRight4">${product.plus}</div>
+                            <div class="inNumbersRight1">${product.plus1}</div>
+                            <div class="inNumbersRight2">${product.plus2}</div>
+                            <div class="inNumbersRight3">${product.plus3}</div>
+                            <div class="inNumbersRight4">До пляжу <br>${product.plus4} кроків</div>
                         </div>
                         <div class="inNumbersRightPart">
                             <div class="inNumbersRight6">${product.price}</div>
                             <div class="inNumbersRight7">За добу</div>
-                            <div class="inNumbersRight8 inBuyNumbers">Замовити</div>
+                            <div class="inNumbersRight8 "><div class="inBuyNumbers">Замовити</div></div>    
                         </div>
                     </div>
                 </div>
