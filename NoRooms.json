@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Лакшері",
+        "plus":"100м",
+        "price":"10000",
+        "img":"luhury1.webp"
+
+    },
+    {
+        "namу":"Стандарт",
+        "plus":"80м",
+        "price":"20000",
+        "img":"normal1.jpg"
+    },
+    {
+        "name":"Економ",
+        "plus":"60м",
+        "price":"30000",
+        "img":"plus1.webp"
+
+    }
+]

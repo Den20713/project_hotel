@@ -93,14 +93,9 @@ header з перемикачами зробити поіншому
 
 
 
+1) створюємо файл json  і вньому 3 позиції
+2) Створюємо контейнер html для товарів
+3) Адаптовуємо скрипт
+4) Перевіряєте роботу
 
 
-
-
-
-
-
-
-        server: ${{secrets.ftp_server}}
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
