@@ -68,7 +68,8 @@ async function getProducts() {
 // Генеруємо HTML-код для карточки товару
 function getCardHTML(product) {
     return `
-         <div class="inNumbersNameMB">Лакшері</div>
+    <div class="inNumbersCard1">
+         <div class="inNumbersNameMB">${product.name}</div>
             <div class="inNumbersPart">
                 <div id="carouselExample" class="carousel slide" style="    background-size: cover;
                 width: 40vw;
@@ -113,6 +114,7 @@ function getCardHTML(product) {
                     </div>
                 </div>
             </div>
+        </div>
     `;
 }
 

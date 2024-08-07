@@ -128,6 +128,8 @@ footer div div a{
 .inInheader{
     transition: all 0.5s linear;
     transition-delay:0.1s ;
+    color: white;
+    text-decoration: none;
 }
 
 .inInheader:hover{
@@ -361,6 +363,14 @@ footer div div a{
     margin: auto;
     margin-left: 2vw;
 }
+.inNumbersCard1{
+    margin-bottom: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 
 
