@@ -39,24 +39,6 @@ window.addEventListener('scroll', () => {
 
 
 
-// автододавання
-function getCookieValue(cookieName) {
-    // Розділяємо всі куки на окремі частини
-    const cookies = document.cookie.split(';');
-
-    // Шукаємо куки з вказаним ім'ям
-    for (let i = 0; i < cookies.length; i++) {
-        const cookie = cookies[i].trim(); // Видаляємо зайві пробіли
-
-        // Перевіряємо, чи починається поточне кукі з шуканого імені
-        if (cookie.startsWith(cookieName + '=')) {
-            // Якщо так, повертаємо значення кукі
-            return cookie.substring(cookieName.length + 1); // +1 для пропуску символу "="
-        }
-    }
-    // Якщо кукі з вказаним іменем не знайдено, повертаємо порожній рядок або можна повернути null
-    return '';
-}
 
 // Отримуємо дані про товари з JSON файлу
 async function getProducts() {
@@ -66,14 +48,12 @@ async function getProducts() {
 };
 
 // Генеруємо HTML-код для карточки товару
-function getCardHTML(product) {
+function getCardHTML(product, index) {
+    const carouselId = `carouselExample${index}`;
     return `
-    <div class="inNumbersCard1">
          <div class="inNumbersNameMB">${product.name}</div>
             <div class="inNumbersPart">
-                <div id="carouselExample" class="carousel slide" style="    background-size: cover;
-                width: 40vw;
-                margin-right: 2vw;">
+                <div id="${carouselId}" class="carousel slide" style="background-size: cover; width: 40vw; margin-right: 1vw;">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="${product.img2}" class="d-block w-100">
@@ -88,11 +68,11 @@ function getCardHTML(product) {
                         <img src="${product.img1}" class="d-block w-100">
                       </div>
                     </div>
-                    <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button  class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
@@ -109,12 +89,11 @@ function getCardHTML(product) {
                         <div class="inNumbersRightPart">
                             <div class="inNumbersRight6">${product.price}</div>
                             <div class="inNumbersRight7">За добу</div>
-                            <div class="inNumbersRight8 "><div class="inBuyNumbers">Замовити</div></div>    
+                            <div class="inNumbersRight8"><div class="inBuyNumbers">Замовити</div></div>    
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     `;
 }
 
@@ -122,11 +101,12 @@ function getCardHTML(product) {
 getProducts().then(function (products) {
     let productsList = document.querySelector('.inNumbers')
     if (productsList) {
-        products.forEach(function (product) {
-            productsList.innerHTML += getCardHTML(product)
+        products.forEach(function (product, index) {
+            productsList.innerHTML += getCardHTML(product, index)
         })
     }
 })
+
 
 
 

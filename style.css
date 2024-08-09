@@ -175,7 +175,10 @@ footer div div a{
     
     flex: 0;
 }
-
+header>h2>a{
+    color: white;
+    text-decoration: none;
+}
 
 
 
@@ -287,7 +290,7 @@ footer div div a{
     display: flex;
     flex-direction: row;
     width: 80%;
-    margin-bottom: 3.5vh;
+    margin-bottom: 5vh;
 }
 .inNumbersInfo{
     display: flex;
@@ -388,7 +391,7 @@ footer div div a{
     }
 
     .inHeaderBackground{
-        height: 50dvh;
+        height: 50vh;
 
 
     }
