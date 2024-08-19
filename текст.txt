@@ -92,6 +92,6 @@ https://getbootstrap.com/docs/5.3/components/accordion/
 
 
 
-
+// <div class="carousel slide" style="background-size: cover; width: 60vw; ">
 
 

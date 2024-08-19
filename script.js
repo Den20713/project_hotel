@@ -48,7 +48,7 @@ async function getProducts() {
 };
 
 // Генеруємо HTML-код для карточки товару
-function getCardHTML(product, index) {
+function getCardHTMLindex(product, index) {
     const carouselId = `carouselExample${index}`;
     return `
          <div class="inNumbersNameMB">${product.name}</div>
@@ -102,7 +102,7 @@ getProducts().then(function (products) {
     let productsList = document.querySelector('.inNumbers')
     if (productsList) {
         products.forEach(function (product, index) {
-            productsList.innerHTML += getCardHTML(product, index)
+            productsList.innerHTML += getCardHTMLindex(product, index)
         })
     }
 })
@@ -110,7 +110,67 @@ getProducts().then(function (products) {
 
 
 
+// Генеруємо HTML-код для карточки товару
+function getCardHTML(product, index) {
+    const carouselId = `carouselExample${index}`;
+    return `
+            <div class="roRoomsPart">
+                <div class="roRoomsPartUp">
+                    <div class="roRoomsPartUpLeft">
+                        <div class="roRoomsPartUpLeftN">${product.name}</div>
+                        <div class="roRoomsPartUpLeftP">${product.price}</div>
+                        <div class="roRoomsPartUpLeftBuy">Замовити</div>
+                    </div>
+                    <div id="${carouselId}" class="carousel slide" style="background-size: cover; ">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="${product.img2}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="${product.img3}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="${product.img4}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="${product.img1}" class="d-block w-100">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="roRoomsPartDown">
+                    <div class="roRoomsPartDownLeft">
+                        <div>Вбиральня</div>
+                        <div>До пляжу 10 кроків</div>
+                        <div>Власна тераса</div>
+                    </div>
+                    <div class="roRoomsPartDownRight">
+                        <div>Тераса </div>
+                        <div>спальня</div>
+                        <div>вбиральня</div>
+                    </div>
+                </div>
+            </div>
+    `;
+}
 
+// Відображаємо товари на сторінці
+getProducts().then(function (products) {
+    let productsList = document.querySelector('.roRooms')
+    if (productsList) {
+        products.forEach(function (product, index) {
+            productsList.innerHTML += getCardHTML(product, index)
+        })
+    }
+})
 
 
 
