@@ -89,7 +89,7 @@ function getCardHTML(product, index) {
                         <div class="inNumbersRightPart">
                             <div class="inNumbersRight6">${product.price}</div>
                             <div class="inNumbersRight7">За добу</div>
-                            <div class="inNumbersRight8"><div class="inBuyNumbers">Замовити</div></div>    
+                            <div class="inNumbersRight8"><a style="text-decoration:nine;" href="rooms.html"><div class="inBuyNumbers">Замовити</div></a></div>    
                         </div>
                     </div>
                 </div>

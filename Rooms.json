@@ -4,12 +4,13 @@
         "plus1":"Тераса",
         "plus2":"WIFI",
         "plus3":"Консєрж",
-        "plus4":"5",
-        "price":"5000",
+        "plus4":5,
+        "price":5000,
         "img1":"img/luhury1.webp",
         "img2":"img/luhury2.webp",
         "img3":"img/luhury3.webp",
-        "img4":"img/luhury4.webp"
+        "img4":"img/luhury4.webp",
+        "pueple":4
 
     },
     {
@@ -17,23 +18,25 @@
         "plus1":"Балкон",
         "plus2":"WIFI",
         "plus3":"Харчування",
-        "plus4":"10",
-        "price":"1000",
+        "plus4":10,
+        "price":1000,
         "img1":"img/plus1.webp",
         "img2":"img/plus2.webp",
         "img3":"img/plus3.webp",
-        "img4":"img/plus4.webp"    
+        "img4":"img/plus4.webp",
+        "pueple":4
     },
     {
         "name":"Стандарт",
         "plus1":"Балкон",
         "plus2":"WIFI",
         "plus3":"Харчування",
-        "plus4":"50",
-        "price":"50",
+        "plus4":50,
+        "price":50,
         "img1":"img/normal1.jpg",
         "img2":"img/normal2.jpg",
         "img3":"img/normal3.jpg",
-        "img4":"img/normal4.jpg"    
+        "img4":"img/normal4.jpg",
+        "pueple":3
     }
 ]

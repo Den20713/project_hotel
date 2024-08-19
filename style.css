@@ -67,7 +67,7 @@
 }
 body{width: 100%;}
 
-
+a
 
 h1{
     font-size: 6vw;
@@ -85,12 +85,13 @@ h4{
 h5{
 
 }
-h6{
+.h6{
     font-size: 0.7vw;
     background-color: black;
     text-align: right;
+    color: white;
+    margin: 0px;
 }
-
 
 footer{
     display: flex;
@@ -122,7 +123,6 @@ footer div div a{
     box-shadow: 0px 2px 30px 5px rgb(0, 0, 0);
     background-color:#064273;
     position: relative ;
-    padding: 5px 00px;
 }
 
 .inInheader{
@@ -130,10 +130,12 @@ footer div div a{
     transition-delay:0.1s ;
     color: white;
     text-decoration: none;
+    padding: 1vw;
 }
 
 .inInheader:hover{
-    scale: 1.1;
+    color: #064273;
+    background-color: white;
     
     
 }
@@ -182,7 +184,7 @@ header>h2>a{
 
 
 
-/*index*/
+/*index.html*/
 
 
 
@@ -248,44 +250,18 @@ header>h2>a{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    border-radius: 6em;
     transition: all .2s;
     border: none;
-    color:white;
-    background-color: #064273;
+    color:#064273;
+    background-color:white;
+    padding: 0px;
 }
    
 .inBuyNumbers:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #064273;
+    color: white;
 }
-   
-.inBuyNumbers:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-   
-.inBuyNumbers::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-   
-.inBuyNumbers::after {
-    background-color: white;
-}
-   
-.inBuyNumbers:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-   }
+
 .inNumbersPart{
     display: flex;
     flex-direction: row;
@@ -377,6 +353,88 @@ header>h2>a{
 
 
 
+/* rooms.html */
+.roRooms{
+
+}
+.roRoomsPart{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2vw auto;
+}
+.roRoomsPartUp{
+    display: flex;
+    flex-direction: row;
+}
+.roRoomsPartDown{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.roRoomsPartUpLeft{
+
+    margin-right: 0.8vw;
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    
+    
+}
+.roRoomsPartUpLeftN{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    background-color: #064273;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+}
+.roRoomsPartUpLeftP{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    background-color: #064273;
+    margin-bottom: 1vw;
+    font-size: 3vw;
+}
+.roRoomsPartUpLeftBuy{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    color: #064273;
+    background-color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    border: #064273 1vw solid;
+}
+.roRoomsPartUpLeftBuy:hover{
+    background-color: #064273;
+    color: white;
+}
+
+.roRoomsPartUpRight{ 
+    width: 40vw;
+
+
+    height: 30vw;
+    background: no-repeat cover;
+
+
+}
+.roRoomsPartDownLeft{
+
+}
+.roRoomsPartDownRight{
+
+}
+
+
+
+
+
 @media  screen and (max-width: 768px) {
     header{
         padding: 1.5vh 0px 1.5vh 0px;
@@ -438,6 +496,7 @@ header>h2>a{
 
 
     .inNumbersRight5{
+        
     }
     
     .inNumbersRight6{
@@ -473,13 +532,45 @@ header>h2>a{
         font-size: 2vw;
     }
 
+    /* rooms.html */
 
-
-
+    .roRoomsPartUpRight{
+        width: 50vw;
+        height: 37.5vw;
+    }
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

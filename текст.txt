@@ -75,7 +75,7 @@
 змінити карткуи номерів
 змінити кнопку замовити
 тег p з номерами переробити
-
+            
 
 
 мобільна версія 
@@ -88,44 +88,10 @@ header з перемикачами зробити поіншому
 
 взяти адаптивний хедер з index_bs
 
+https://getbootstrap.com/docs/5.3/components/accordion/
 
 
 
 
 
-1) створюємо файл json  і вньому 3 позиції
-2) Створюємо контейнер html для товарів
-3) Адаптовуємо скрипт
-4) Перевіряєте роботу
 
-
-
-
-
-                <div id="carouselExample" class="carousel slide" style="    background-size: cover;
-                width: 40vw;
-                height: 30vw;
-                margin-right: 2vw;">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img\luhury2.webp" class="d-block w-100">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img\luhury3.webp" class="d-block w-100">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img\luhury4.webp" class="d-block w-100">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img\luhury1.webp" class="d-block w-100">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
