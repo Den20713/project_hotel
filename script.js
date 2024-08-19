@@ -148,14 +148,14 @@ function getCardHTML(product, index) {
                 </div>
                 <div class="roRoomsPartDown">
                     <div class="roRoomsPartDownLeft">
-                        <div>Вбиральня</div>
-                        <div>До пляжу 10 кроків</div>
-                        <div>Власна тераса</div>
+                        <div>${product.plus2}</div>
+                        <div>До пляжу ${product.plus4} кроків</div>
+                        <div>${product.pueple} особи</div>
                     </div>
                     <div class="roRoomsPartDownRight">
-                        <div>Тераса </div>
-                        <div>спальня</div>
-                        <div>вбиральня</div>
+                        <div>${product.room1}</div>
+                        <div>${product.room2}</div>
+                        <div>${product.room3}</div>
                     </div>
                 </div>
             </div>

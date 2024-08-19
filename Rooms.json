@@ -10,7 +10,10 @@
         "img2":"img/luhury2.webp",
         "img3":"img/luhury3.webp",
         "img4":"img/luhury4.webp",
-        "pueple":4
+        "pueple":4,
+        "room1":"Спальня",
+        "room2":"Тераса",
+        "room3":"Вбиральня"
 
     },
     {
@@ -24,7 +27,10 @@
         "img2":"img/plus2.webp",
         "img3":"img/plus3.webp",
         "img4":"img/plus4.webp",
-        "pueple":4
+        "pueple":4,
+        "room1":"Спальня",
+        "room2":"",
+        "room3":"Вбиральня"
     },
     {
         "name":"Стандарт",
@@ -32,11 +38,14 @@
         "plus2":"WIFI",
         "plus3":"Харчування",
         "plus4":50,
-        "price":50,
+        "price":500,
         "img1":"img/normal1.jpg",
         "img2":"img/normal2.jpg",
         "img3":"img/normal3.jpg",
         "img4":"img/normal4.jpg",
-        "pueple":3
+        "pueple":3,
+        "room1":"Спальня",
+        "room2":"Тераса",
+        "room3":"Вбиральня"
     }
 ]
