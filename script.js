@@ -1,4 +1,5 @@
 // preloader
+
 window.addEventListener('load', function() {
     let preloader = document.querySelector('.preloader');
     let loader = document.querySelector('.loader');
@@ -10,7 +11,6 @@ window.addEventListener('load', function() {
     },1000)
 });
 //preloader
-
 
 
 // Анімація збільшення зменшиння при прокручуані
@@ -89,15 +89,13 @@ function getCardHTMLindex(product, index) {
                         <div class="inNumbersRightPart">
                             <div class="inNumbersRight6">${product.price}</div>
                             <div class="inNumbersRight7">За добу</div>
-                            <div class="inNumbersRight8"><a style="text-decoration:nine;" href="rooms.html"><div class="inBuyNumbers">Замовити</div></a></div>    
+                            <div class="inNumbersRight8"><a style="text-decoration:none;" href="order.html"><div class="inBuyNumbers">Замовити</div></a></div>    
                         </div>
                     </div>
                 </div>
             </div>
     `;
 }
-
-// Відображаємо товари на сторінці
 getProducts().then(function (products) {
     let productsList = document.querySelector('.inNumbers')
     if (productsList) {
@@ -106,11 +104,6 @@ getProducts().then(function (products) {
         })
     }
 })
-
-
-
-
-// Генеруємо HTML-код для карточки товару
 function getCardHTML(product, index) {
     const carouselId = `carouselExample${index}`;
     return `
@@ -119,7 +112,7 @@ function getCardHTML(product, index) {
                     <div class="roRoomsPartUpLeft">
                         <div class="roRoomsPartUpLeftN">${product.name}</div>
                         <div class="roRoomsPartUpLeftP">${product.price}</div>
-                        <div class="roRoomsPartUpLeftBuy">Замовити</div>
+                        <a href="order.html"><div class="roRoomsPartUpLeftBuy">Замовити</div></a>
                     </div>
                     <div id="${carouselId}" class="carousel slide" style="background-size: cover; ">
                         <div class="carousel-inner">
@@ -158,18 +151,30 @@ function getCardHTML(product, index) {
                         <div>${product.room3}</div>
                     </div>
                 </div>
-            </div>
-    `;
+            </div>`;
 }
 
-// Відображаємо товари на сторінці
 getProducts().then(function (products) {
     let productsList = document.querySelector('.roRooms')
     if (productsList) {
         products.forEach(function (product, index) {
             productsList.innerHTML += getCardHTML(product, index)
-        })
-    }
+})}})
+
+
+
+
+
+
+
+let orbooked = document.querySelector(".orbooked")
+let orFormButton = document.querySelector(".orFormButton")
+
+orFormButton.addEventListener("click", function() {
+    orbooked.style.display = "flex";
+    setTimeout(() => {
+        orbooked.style.cssText = "display:none;";
+    }, 2000);
 })
 
 
@@ -185,22 +190,3 @@ getProducts().then(function (products) {
 
 
 
-
-
-
-
-
-
-
-
-
-// let inHeaderBackground = document.getElementsByClassName('inHeaderBackground');
-
-// function inHeaderBackgroundStyleStandart(element) {
-//     element.style.cssText = `background-position: 0px 0px;`;
-// }
-
-// function inHeaBackgroundStyleNoStandart(element, value) {
-//     element.style.cssText = `background-position: 0px ${value}px;`;
-// }
-// inHeaBackgroundStyleNoStandart(inHeaderBackground[0], 0);
